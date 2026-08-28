@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-navy-700 antialiased;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Malgun Gothic',
+    sans-serif;
+}
+
+section[id] {
+  scroll-margin-top: 88px;
+}
+
+::selection {
+  background-color: theme('colors.leaf.100');
+  color: theme('colors.navy.700');
+}
+
+a,
+button {
+  @apply outline-none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  @apply ring-2 ring-teal-400 ring-offset-2 ring-offset-white;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
