@@ -1,5 +1,7 @@
 node_modules
 dist
+dist-netlify
+*.zip
 .DS_Store
 
 # 사업계획서/레퍼런스 등 배포 대상이 아닌 원본 자료 (공개 저장소에는 올리지 않음)
