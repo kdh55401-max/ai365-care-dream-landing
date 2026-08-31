@@ -18,18 +18,28 @@ export default function Cta({ content }: CtaProps) {
             <h2 className="relative text-2xl font-extrabold leading-tight tracking-tight text-white sm:text-3xl md:text-4xl">
               {content.headline}
             </h2>
-            <a
-              href="#apply-name"
-              onClick={(event) => {
-                event.preventDefault()
-                const nameInput = document.getElementById('apply-name')
-                nameInput?.scrollIntoView({ behavior: 'smooth', block: 'center' })
-                nameInput?.focus({ preventScroll: true })
-              }}
-              className="relative mt-9 inline-flex items-center justify-center rounded-full bg-leaf-500 px-8 py-4 text-sm font-bold text-navy-700 shadow-card transition-all duration-300 ease-out hover:scale-105 hover:bg-teal-400 hover:shadow-glow focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-navy-700 sm:text-base"
-            >
-              {content.label}
-            </a>
+            <div className="relative mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <a
+                href="#apply-name"
+                onClick={(event) => {
+                  event.preventDefault()
+                  const nameInput = document.getElementById('apply-name')
+                  nameInput?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                  nameInput?.focus({ preventScroll: true })
+                }}
+                className="inline-flex items-center justify-center rounded-full bg-leaf-500 px-8 py-4 text-sm font-bold text-navy-700 shadow-card transition-all duration-300 ease-out hover:scale-105 hover:bg-teal-400 hover:shadow-glow focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-navy-700 sm:text-base"
+              >
+                {content.label}
+              </a>
+              <a
+                href="https://ai365-care-dream.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-white/40 px-8 py-4 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-white focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-navy-700 sm:text-base"
+              >
+                실제 MVP 체험하기
+              </a>
+            </div>
           </div>
         </Reveal>
 

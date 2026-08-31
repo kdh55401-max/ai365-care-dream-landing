@@ -36,6 +36,14 @@ export default function Hero({ content }: HeroProps) {
           <Reveal delayMs={300}>
             <div className="mt-9 flex flex-col items-center gap-3 sm:flex-row md:justify-start md:items-start">
               <a
+                href="https://ai365-care-dream.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-leaf-500 px-7 py-3.5 text-sm font-semibold text-navy-700 shadow-card transition-all duration-300 ease-out hover:scale-105 hover:bg-teal-400 hover:shadow-glow focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 sm:text-base"
+              >
+                실제 MVP 체험하기
+              </a>
+              <a
                 href="#cta"
                 className="inline-flex items-center justify-center rounded-full bg-navy-700 px-7 py-3.5 text-sm font-semibold text-white shadow-card transition-all duration-300 ease-out hover:scale-105 hover:bg-navy-600 hover:shadow-glow focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 sm:text-base"
               >
