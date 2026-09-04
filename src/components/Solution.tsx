@@ -50,23 +50,30 @@ export default function Solution({ content }: SolutionProps) {
             {content.steps.map((step, index) => (
               <Reveal key={step.title} delayMs={index * 100}>
                 <div className="group flex h-full flex-col rounded-2xl border border-navy-50 bg-white p-6 shadow-card transition-all duration-300 ease-out hover:-translate-y-1 hover:border-teal-100 hover:shadow-xl">
-                  <div className="flex items-center gap-3">
-                    <div className="relative flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-navy-700 text-sm font-bold text-white transition-colors duration-300 group-hover:bg-teal-600">
-                      {String(index + 1).padStart(2, '0')}
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <div className="flex items-center gap-3">
+                      <div className="relative flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-navy-700 text-sm font-bold text-white transition-colors duration-300 group-hover:bg-teal-600">
+                        {String(index + 1).padStart(2, '0')}
+                      </div>
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="text-navy-100 transition-colors duration-300 group-hover:text-leaf-500"
+                      >
+                        {ICONS[step.title]}
+                      </svg>
                     </div>
-                    <svg
-                      width="22"
-                      height="22"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="text-navy-100 transition-colors duration-300 group-hover:text-leaf-500"
-                    >
-                      {ICONS[step.title]}
-                    </svg>
+                    {!step.implemented && (
+                      <span className="whitespace-nowrap rounded-full border border-dashed border-navy-100 px-2 py-0.5 text-[10px] font-bold text-navy-400">
+                        다음 구현 단계
+                      </span>
+                    )}
                   </div>
                   <h3 className="mt-5 text-base font-bold tracking-tight text-navy-700">
                     {step.title}
