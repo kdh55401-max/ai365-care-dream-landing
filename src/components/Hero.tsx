@@ -42,7 +42,7 @@ export default function Hero({ content }: HeroProps) {
           <Reveal delayMs={340}>
             <div className="mt-9 flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap md:justify-start">
               <a
-                href="https://ai365-care-dream.vercel.app/"
+                href="https://ai365-care-dream-gadream.vercel.app/care?demo=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-full items-center justify-center whitespace-nowrap rounded-full bg-leaf-500 px-7 py-3.5 text-sm font-bold text-navy-700 shadow-card transition-all duration-300 ease-out hover:scale-105 hover:bg-teal-400 hover:shadow-glow focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 sm:w-auto sm:text-base"
