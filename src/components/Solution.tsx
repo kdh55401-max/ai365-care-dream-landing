@@ -29,7 +29,7 @@ export default function Solution({ content }: SolutionProps) {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal>
-            <span className="text-xs font-bold uppercase tracking-widest text-leaf-500">
+            <span className="text-xs font-bold uppercase tracking-widest text-leaf-700">
               Solution
             </span>
           </Reveal>

@@ -82,7 +82,13 @@ export default function ApplyForm() {
     'w-full rounded-xl border bg-white px-4 py-3.5 text-base text-navy-700 placeholder:text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-1'
 
   return (
-    <form onSubmit={handleSubmit} noValidate className="mx-auto mt-10 max-w-lg text-left">
+    <form
+      action={FORMSPREE_ENDPOINT}
+      method="post"
+      onSubmit={handleSubmit}
+      noValidate
+      className="mx-auto mt-10 max-w-lg text-left"
+    >
       <div className="space-y-6">
         <div>
           <label htmlFor="apply-name" className="mb-2 block text-sm font-semibold text-navy-700">
@@ -91,6 +97,7 @@ export default function ApplyForm() {
           <input
             id="apply-name"
             name="name"
+            required
             type="text"
             autoComplete="name"
             value={values.name}
@@ -116,6 +123,7 @@ export default function ApplyForm() {
           <input
             id="apply-phone"
             name="phone"
+            required
             type="tel"
             autoComplete="tel"
             value={values.phone}
@@ -144,6 +152,7 @@ export default function ApplyForm() {
           <textarea
             id="apply-message"
             name="message"
+            required
             rows={5}
             value={values.message}
             onChange={handleChange('message')}

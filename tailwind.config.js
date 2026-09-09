@@ -24,6 +24,8 @@ export default {
           DEFAULT: '#3FAE7A',
           100: '#D8F0E3',
           500: '#3FAE7A',
+          // WCAG AA-compliant (>=4.5:1 on white) variant for small text; leaf-500 stays decorative-only.
+          700: '#1E7A52',
         },
       },
       fontFamily: {

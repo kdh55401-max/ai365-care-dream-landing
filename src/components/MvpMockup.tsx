@@ -22,7 +22,7 @@ export default function MvpMockup() {
             <span className="rounded-full bg-teal-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-teal-600">
               CARE PROFILE
             </span>
-            <span className="text-[10px] font-semibold text-slate-400">방문 중</span>
+            <span className="text-[10px] font-semibold text-slate-600">방문 중</span>
           </div>
           <div className="rounded-xl border border-navy-50 bg-navy-50/40 px-3 py-2.5">
             <p className="text-xs font-bold text-navy-700">김○○ 어르신</p>
@@ -83,7 +83,7 @@ export default function MvpMockup() {
       </div>
 
       <span className="mt-4 rounded-full border border-navy-100 bg-white px-3.5 py-1.5 text-xs font-bold text-navy-700 shadow-sm">
-        실제 MVP 작동 화면
+        MVP 화면 예시 · 설명용 목업
       </span>
     </div>
   )

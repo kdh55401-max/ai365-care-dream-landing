@@ -11,7 +11,7 @@ const COLUMN_STYLES: Record<
 > = {
   now: {
     card: 'border-leaf-100 bg-leaf-100/30',
-    label: 'text-leaf-500',
+    label: 'text-leaf-700',
     sublabel: 'text-navy-700',
     itemIcon: (
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
